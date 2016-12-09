@@ -17,5 +17,3 @@ CKEDITOR.editorConfig = function(config){
 };	
 
 ```	
-
-And variable `var path = '/resource/ckeditor/plugins/qqsmiley/';` in dialogs/qqsmiley.js file.
