@@ -17,3 +17,24 @@ CKEDITOR.editorConfig = function(config){
 };	
 
 ```	
+
+使用ckeditor做微信公众号回复消息内容编辑器的配置如下：
+
+```javascript
+
+var editor = CKEDITOR.replace('textcontent', {
+    height:250,
+    allowedContent: true,
+    ignoreEmptyParagraph : false,
+    enterMode : CKEDITOR.ENTER_BR,
+    pasteFromWordRemoveFontStyles:false,
+    pasteFromWordRemoveStyles: false,
+    extraPlugins : 'autogrow,qqsmiley',
+    toolbarGroups: [
+	{"name":"insert","groups":["insert"]},
+	{"name":"links"}
+    ],
+    removeButtons: 'PageBreak,Table,Smiley,SpecialChar,Image,HorizontalRule,Iframe,Flash'
+});
+
+```
